@@ -35,7 +35,7 @@ allprojects {
       compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
   }
 ```
-Now you can develop/compile/publish your java library aganst the Flutter API without Android and Flutter frameworks.
+Now you can develop/compile your java library aganst the Flutter API without Android and Flutter frameworks. Also you can publish on a Maven repo. 
 
 
 ### In your Android app project
@@ -53,9 +53,11 @@ dependencies {
 #### Step 5 (Optional). Enable multidex.
 That would be necessary if you fail to compile your Android app with errors like:
  - ```Error:Execution failed for task :app:transformClassesWithDexForDebug.```
- - ```Error:Error converting bytecode to dex:```
+ - ```Error:Error converting bytecode to dex```
 
 or similar. 
+
+Edit your gradle settings:
 
 ```
 android {
@@ -85,3 +87,6 @@ android {
     }
 }
 ```
+
+By this we tell AbdroidStudio to discard the stub jar to use the real Flutter API on a device.
+
