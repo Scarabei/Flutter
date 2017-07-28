@@ -35,10 +35,10 @@ allprojects {
       compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
   }
 ```
-Now you can develop/compile your java library aganst the Flutter API without Android and Flutter frameworks.
+Now you can develop/compile/publish your java library aganst the Flutter API without Android and Flutter frameworks.
 
 
-### In your Android project
+### In your Android app project
 
 #### Step 4. Import your library.
 
