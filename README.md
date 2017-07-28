@@ -39,7 +39,7 @@ Now you can develop/compile your java library aganst the Flutter API without And
 
 #### Step 4. Import your library.
 
-This really dependes on you how you do that.
+You should know better how to do that.
 
 #### Step 5 (Optional). Enable multidex.
 That would be necessary if you fail to compile your Android app with errors like:
