@@ -28,6 +28,8 @@ allprojects {
 }
 ```
 
+For the latest ```flutterAPIversion``` value see the builds section: https://github.com/Scarabei/Flutter/releases
+
 #### Step 2. Add the dependency
 
 ```
@@ -35,7 +37,7 @@ allprojects {
       compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
   }
 ```
-Now you can develop/compile your java library aganst the Flutter API without Android and Flutter frameworks. Also you can publish on a Maven repo. 
+Now you can develop/compile your java library aganst the Flutter API without Android and Flutter frameworks. Also you can publish it on a Maven repo. 
 
 
 ### In your Android app project
