@@ -44,7 +44,7 @@ Now you can develop/compile your java library aganst the Flutter API without And
 
 #### Step 4. Import your library.
 
-This part is on you. Sould look something like:
+This part is on you. Should look something like:
 
 ```
 dependencies {
