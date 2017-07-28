@@ -1,6 +1,6 @@
 # Flutter API
 
-There is an artifact available in the Maven repository. These is not functional, however, and only provide stubbed implementations of the API. All methods in all classes throw a runtime exception. Because an Android app runs on a device, it will never use these libraries for execution, but the API compatibility allows an app to be compiled as if it were the real library.
+This is an artifact published in the JitPack repository. This is not functional, however, and only provides stubbed implementations of the Flutter API. All methods in all classes throw a runtime exception. Because an Android app runs on a device, it will never use these libraries for execution, but the API compatibility allows an app to be compiled as if it was the real library.
 
 ## Repo
 [![](https://jitpack.io/v/Scarabei/Flutter.svg)](https://jitpack.io/#Scarabei/Flutter)
@@ -33,12 +33,20 @@ allprojects {
       compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
   }
 ```
+Now you can develop/compile your java library aganst the Flutter API without Android and Flutter frameworks.
 
 ### In your Android project
 
 #### Step 4. Import your library.
 
+This really dependes on you how you do that.
+
 #### Step 5 (Optional). Enable multidex.
+That would be necessary if you fail to compile your Android app with errors like:
+ - ```Error:Execution failed for task :app:transformClassesWithDexForDebug.```
+ - ```Error:Error converting bytecode to dex:```
+
+or similar. 
 
 ```
 android {
@@ -56,6 +64,7 @@ android {
     }
 ```
 
+See the link for details: https://developer.android.com/studio/build/multidex.html
 
 #### Step 6. Exclude the Flutter API stub.
 
