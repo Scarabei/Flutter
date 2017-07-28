@@ -2,6 +2,8 @@
 
 This is an artifact published in the JitPack repository. This is not functional, however, and only provides stubbed implementations of the Flutter API. All methods in all classes throw a runtime exception. Because an Android app runs on a device, it will never use these libraries for execution, but the API compatibility allows an app to be compiled as if it was the real library.
 
+That would be useful if you are trying to build a java part of your flutter plugin implementation.
+
 ## Repo
 [![](https://jitpack.io/v/Scarabei/Flutter.svg)](https://jitpack.io/#Scarabei/Flutter)
 
@@ -35,11 +37,18 @@ allprojects {
 ```
 Now you can develop/compile your java library aganst the Flutter API without Android and Flutter frameworks.
 
+
 ### In your Android project
 
 #### Step 4. Import your library.
 
-You should know better how to do that.
+This part is on you. Sould look something like:
+
+```
+dependencies {
+      compile "com.your.flutter.java-plugin"
+   }
+```
 
 #### Step 5 (Optional). Enable multidex.
 That would be necessary if you fail to compile your Android app with errors like:
