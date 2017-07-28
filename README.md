@@ -1,6 +1,6 @@
 # Flutter API
 
-This is an artifact published in the JitPack repository. This is not functional, however, and only provides stubbed implementations of the Flutter API. All methods in all classes throw a runtime exception. Because an Android app runs on a device, it will never use these libraries for execution, but the API compatibility allows an app to be compiled as if it was the real library.
+This is an artifact published in the JitPack repository. This is not functional and only provides stubbed implementations of the Flutter API. All methods in all classes throw a runtime exception. Because an Android app runs on a device, it will never use these libraries for execution, but the API compatibility allows an app to be compiled as if it was the real library.
 
 That would be useful if you are trying to build a java part of your flutter plugin implementation.
 
