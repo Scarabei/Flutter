@@ -28,7 +28,7 @@ allprojects {
 
 ```
   dependencies {
-      compile 'com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion'
+      compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
   }
 ```
 
